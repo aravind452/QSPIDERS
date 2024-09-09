@@ -3,6 +3,7 @@ import java.util.*;
 public class LoopExamples {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
+    System.out.println("Enter a number: ");
     int input = sc.nextInt();
 
     if (input >= 0 && input <= 9) {
@@ -17,7 +18,7 @@ public class LoopExamples {
       }
 
       int answer = lasttDigit + firstDigit;
-      System.out.println(answer);
+      System.out.println("First and Last Digit sum " + answer);
 
       int middle = input / 10;
       int sumBetween = 0;
@@ -27,7 +28,7 @@ public class LoopExamples {
         middle /= 10;
       }
 
-      System.out.println(sumBetween);
+      System.out.println("In Between Digits Sum " + sumBetween);
 
       sc.close();
     }
