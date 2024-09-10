@@ -30,6 +30,13 @@ public class LoopExamples {
 
       System.out.println("In Between Digits Sum " + sumBetween);
 
+      if(answer == sumBetween){
+        System.out.println("Xylem");
+      }
+      else {
+        System.out.println("Phloem");
+      }
+
       sc.close();
     }
   }
