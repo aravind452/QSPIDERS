@@ -11,9 +11,6 @@ public class ReverseNumber {
     // neworiginal /= 10;
     // }
 
-    // // System.out.println("Original Number " + original);
-    // // System.out.println("Reversed Number " + reverse);
-
     // if (original == reverse) {
     // System.out.println("Palindrome");
     // } else {
