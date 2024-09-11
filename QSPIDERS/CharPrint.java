@@ -1,14 +1,17 @@
+import java.util.*;
+
 public class CharPrint {
 
   public static void main(String[] args) {
-    char ch = 'C';
-    char temp = 'A';
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter a character (only Uppercase)");
+    char ch = sc.next().charAt(0);
 
     if (ch >= 'A' && ch <= 'Z') {
-      temp = (char) (ch - 'A');
+      char temp = (char) ('a' + ('A' + 'Z' - ch) - 'A');
+      System.out.println(temp);
     }
-
-    System.out.println((char) ('z' - temp));
+    sc.close();
 
   }
 
