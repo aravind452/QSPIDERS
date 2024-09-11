@@ -2,9 +2,8 @@ import java.util.*;
 
 public class DoWhileHotel {
 
-  static Scanner sc = new Scanner(System.in);
-
   public static void main(String[] args) throws Exception {
+    Scanner sc = new Scanner(System.in);
 
     boolean flag = true;
 
@@ -76,6 +75,7 @@ public class DoWhileHotel {
           break;
       }
     } while (flag);
+    sc.close();
 
   }
 }
