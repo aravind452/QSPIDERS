@@ -7,28 +7,30 @@ public class DoWhileHotel {
   public static void main(String[] args) throws Exception {
 
     boolean flag = true;
-    boolean menu = true;
+
     do {
       System.out.println("Select the Hotel");
       System.out.println("1.Buhari\n2.A2B\n3.Exit");
       int hotelInput = sc.nextInt();
+      boolean menu = true;
 
       switch (hotelInput) {
 
         case 1:
+          System.out.println("Ridirecting to Buhari Page");
           do {
             Thread.sleep(1000);
-            System.out.println("Ridirecting to Buhari Page");
+
             System.out.println("Select the food!");
             System.out.println("1.Chicken Biryani\n2.Mutton Biriyani\n3.Exit");
             int foodInput = sc.nextInt();
             switch (foodInput) {
               case 1:
-                System.out.println("Chicken Biriyani Rs380");
+                System.out.println("Chicken Biriyani Rs-380");
                 Thread.sleep(1000);
                 break;
               case 2:
-                System.out.println("Mutton Biriyani Rs480");
+                System.out.println("Mutton Biriyani Rs-480");
                 Thread.sleep(1000);
                 break;
               case 3:
@@ -42,19 +44,20 @@ public class DoWhileHotel {
           } while (menu);
           break;
         case 2:
+          System.out.println("Ridirecting to A2B Page");
           do {
             Thread.sleep(1000);
-            System.out.println("Ridirecting to A2B Page");
+
             System.out.println("Select the food!");
             System.out.println("1.Dosa\n2.Idly\n3.Exit");
             int foodInput = sc.nextInt();
             switch (foodInput) {
               case 1:
-                System.out.println("Dosa Rs30");
+                System.out.println("Dosa Rs-30");
                 Thread.sleep(1000);
                 break;
               case 2:
-                System.out.println("Idly Rs20");
+                System.out.println("Idly Rs-20");
                 Thread.sleep(1000);
                 break;
               case 3:
