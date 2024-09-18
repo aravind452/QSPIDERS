@@ -1,7 +1,7 @@
 public class Armstrong {
 
   public static void main(String[] args) {
-    int number = 370;
+    int number = 1634;
     int neworiginal = number;
     int temp = number;
     int n = 0;
@@ -14,7 +14,8 @@ public class Armstrong {
     int result = 0;
     while (neworiginal > 0) {
       int tempVariable = neworiginal % 10;
-      result += Math.pow(tempVariable, n);
+      // result += Math.pow(tempVariable, n);
+      result += power(tempVariable, n);
       neworiginal /= 10;
 
     }
@@ -25,6 +26,19 @@ public class Armstrong {
     } else {
       System.out.println("Not A Armstrong!");
     }
+  }
+
+  static int power(int x, int y) {
+    int ans = 1;
+    if (y == 0) {
+      return 1;
+    } else {
+
+      for (int i = 1; i <= y; i++) {
+        ans = ans * x;
+      }
+    }
+    return ans;
   }
 
 }
