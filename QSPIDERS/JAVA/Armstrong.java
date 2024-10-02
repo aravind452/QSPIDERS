@@ -1,7 +1,7 @@
 public class Armstrong {
 
   public static void main(String[] args) {
-    int number = 1634;
+    int number = 153;
     int neworiginal = number;
     int temp = number;
     int n = 0;
