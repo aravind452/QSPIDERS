@@ -28,6 +28,14 @@ public class ArrayRotation {
 
     }
 
+    // Single loop method
+
+    // for (int i = 0; i < arr.length; i++) {
+
+    // int newIndex = (i + arr.length - n) % arr.length;
+    // res[newIndex] = arr[i];
+    // }
+
     return res;
 
   }
