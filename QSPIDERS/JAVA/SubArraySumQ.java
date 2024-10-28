@@ -34,13 +34,13 @@ public class SubArraySumQ {
 
   // Kadane Algorithm
   static int maxSub(int[] arr) {
-    int max = arr[0];
-    int currentMax = arr[0];
+    int maxCurrent = arr[0];
+    int maxGlobal = arr[0];
     for (int i = 1; i < arr.length; i++) {
-      currentMax = Math.max(arr[i], currentMax + arr[i]);
-      max = Math.max(max, currentMax);
+      maxCurrent = Math.max(arr[i], maxCurrent + arr[i]);
+      maxGlobal = Math.max(maxCurrent, maxCurrent);
     }
-    return max;
+    return maxGlobal;
   }
 
   // Prefix Sum Approach
