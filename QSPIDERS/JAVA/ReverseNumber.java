@@ -1,6 +1,14 @@
+import java.util.*;
+
 public class ReverseNumber {
 
+  Scanner sc = new Scanner(System.in);
+
   public static void main(String[] args) {
+
+    ReverseNumber reverseNumber = new ReverseNumber();
+    int r = reverseNumber.sc.nextInt();
+    System.out.println(r);
     // int original = 151;
     // int neworiginal = original;
     // int reverse = 0;
@@ -34,3 +42,9 @@ public class ReverseNumber {
 
   }
 }
+
+/*
+ * select sal
+ * from emp
+ * limit 1 offset 3 order by sal asc;
+ */
